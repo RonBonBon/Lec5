@@ -15,12 +15,25 @@ class ViewController: UIViewController {
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var bottomLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var btnAction: UIButton!
 
 
     var deck = BlackjackDeck()
+    var score = 0 {
+        didSet {
+            scoreLabel.text = "\(score)"
+            if score >= 21{
+                btnAction.isEnabled = false
+                btnAction.setTitle("Play Again", for: .normal)
+            }
+        }
+    }
 
     @IBAction func dealTapped(_ sender: UIButton) {
         let card = deck.dealCard()
+        
+        score += card.value
+        
         topLabel.text = card.rank.description
         midsLabel.text = card.suit.description
         bottomLabel.text = card.rank.description

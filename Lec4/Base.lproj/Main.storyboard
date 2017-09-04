@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1j-Vk-WQA">
-                                <frame key="frameInset" minX="38" minY="594" width="46" height="30"/>
+                                <frame key="frameInset" minX="12" minY="594" width="87" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -34,14 +34,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8GR-Ee-WMi">
-                                <frame key="frameInset" minX="327" minY="594" width="34" height="30"/>
+                                <frame key="frameInset" minX="328" minY="594" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJX-Le-8e1">
-                                <frame key="frameInset" minX="314" minY="37" width="42" height="21"/>
+                                <frame key="frameInset" minX="324" minY="37" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -59,6 +59,7 @@
                     </view>
                     <connections>
                         <outlet property="bottomLabel" destination="8GR-Ee-WMi" id="PY6-4D-heU"/>
+                        <outlet property="btnAction" destination="I1j-Vk-WQA" id="TB4-mp-hBO"/>
                         <outlet property="midsLabel" destination="7Z5-VG-B0J" id="Lrh-yY-is7"/>
                         <outlet property="scoreLabel" destination="LJX-Le-8e1" id="lJK-Mg-Jxs"/>
                         <outlet property="topLabel" destination="Jw1-l4-YNE" id="Pbm-pD-9w4"/>

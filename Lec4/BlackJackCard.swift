@@ -26,5 +26,9 @@ struct BlackJackCard{
         //"Ace of Clubs"
         return "\(rank) of \(suit)"
     }
+    
+    var value: Int {
+        return rank.blackJackValue
+    }
 }
 
